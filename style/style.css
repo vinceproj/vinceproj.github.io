@@ -5,8 +5,9 @@ nav {
   font-size: 18px;
   bottom: 0;
   background: silver;
-  left: 45%;
-  width: 15%;
+  left: 0px;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
 }
 
 h1 {
@@ -22,8 +23,7 @@ body {
   font-size: 18px;
   background: #4d4a49;
   font-family: "Roboto Mono", monospace;
-  padding: 0.2vh 0.2vh 0.2vh 0.2vh;
-  margin: 0vh 2vw 0vh 2vw;
+  padding: 0vh 2vw 2vh 2vw;
 }
 
 p {
