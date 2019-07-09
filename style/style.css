@@ -4,21 +4,26 @@ nav {
   color: white;
   font-size: 18px;
   bottom: 0;
-  left: 50%;
+  background: silver;
+  left: 45%;
+  width: 15%;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 60px;
+  font-size: 48px;
   text-align: right;
 }
 
 body {
+  position: relative;
   color: white;
   font-size: 18px;
   background: #4d4a49;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.2vh 0.2vh 0.2vh 0.2vh;
+  margin: 0vh 2vw 0vh 2vw;
 }
 
 p {
