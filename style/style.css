@@ -1,0 +1,28 @@
+nav {
+  text-align: center;
+  position: fixed;
+  color: white;
+  font-size: 18px;
+  bottom: 0;
+  left: 40vw;
+}
+
+body {
+  background: #4d4a49;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 60px;
+  text-align: right;
+}
+
+body {
+  color: white;
+  font-size: 18px;
+}
+
+p {
+  text-indent: 50px;
+}
