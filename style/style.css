@@ -67,3 +67,10 @@ p {
   height: 100px;
   margin: 0;
 }
+
+.picElement {
+  overflow: hidden;
+  object-fit: contain;
+  width: 200px;
+  background: white;
+}
