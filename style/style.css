@@ -10,6 +10,7 @@ body {
   background-color: #f0f0f0;
 }
 
+/*navBar Settings*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -63,66 +64,61 @@ nav {
   width: 100%;
 }
 
-.navMobile {
-  display: none;
+
+/*Footer Settings*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70px;
+  background-color: #942525;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  top: 0;
 }
 
-.navMobile div {
-  width: 25px;
-  height: 2px;
-  margin: 5px;
-  background-color: #f0f0f0;
+.footerHeading {
+  color: #f0f0f0;
+  letter-spacing: 2px;
+  font-size: 24px;
+  cursor: default;
+  user-select: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .navLinks {
-    width: 50%;
-  }
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .navLinks {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #942525;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .navMobile {
-    display: block;
-    cursor: pointer;
-  }
+.footerLinks li {
+  list-style: none;
+  margin-right: 25px;
 }
 
-.navMobileActive {
-  transform: translateX(0%);
+.footerLinks a {
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
 }
 
-.navLine1Close {
-  transition: transform 0.5s ease-in;
-  transform: rotate(45deg) translate(5px, 5px);
+.footerLinks a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #f0f0f0;
+  transition: width 0.3s;
 }
 
-.navLine2Close {
-  opacity: 0;
+.footerLinks a:hover::after {
+  width: 100%;
 }
 
-.navLine3Close {
-  transition: transform 0.5s ease-out;
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
+/*Main Settings*/
 .mainContainer {
   display: flex;
   flex-flow: column;
@@ -130,8 +126,11 @@ nav {
 }
 
 .mainItem {
-  padding: 5px 5px 5px 5px;
-  height: 50vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  min-height: 50vh;
 }
 
 #mainHome {
@@ -179,10 +178,216 @@ nav {
 }
 
 #mainAbout {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #FFB4B4;
+}
+
+.mainItem h4 {
+  align-self: left;
+  padding-left: 50px;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  flex: 1;
+}
+
+.mainItemP {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-indent: 50px;
+  padding-left: 100px;
+  padding-right: 50px;
+  flex: 10;
 }
 
 #mainExperience {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #FFAAAA;
 }
 
 #mainProjects {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #FF9A9A;
+}
+
+/*mainTab Settings */
+.mainTabContainer {
+  min-height: 200px;
+  padding-left: 100px;
+}
+
+.mainTabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 80%;
+}
+
+.mainTabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.mainTabs button:hover {
+  background-color: #ddd;
+}
+
+.mainTabs button.active {
+  background-color: #DFDFDF;
+}
+
+/*tabContent Settings*/
+.tabContent {
+  width: 80%;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #DFDFDF;
+  border-top: none;
+  background-color: #DFDFDF;
+
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Special Screen Settings*/
+.navMobile {
+  display: none;
+}
+
+.navMobile div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1024px) {
+  .navLinks {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navLinks {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #942525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navMobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mainItem h4 {
+    align-self: left;
+    padding-left: 50px;
+    font-size: 60px;
+    padding-top: 70px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    flex: 1;
+  }
+
+  .mainItem p {
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 50px;
+    flex: 10;
+  }
+
+  .footerHeading {
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  .footerLinks li {
+    list-style: none;
+    margin-right: 25px;
+  }
+
+  .mainItem h4 {
+    align-self: left;
+    padding-left: 20px;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    flex: 1;
+  }
+
+  .mainItemP {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex: 10;
+  }
+
+  .mainItem {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-height: 50vh;
+  }
+}
+
+/*End of Mobile Settings*/
+
+.navMobileActive {
+  transform: translateX(0%);
+}
+
+.navLine1Close {
+  transition: transform 0.5s ease-in;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navLine2Close {
+  opacity: 0;
+}
+
+.navLine3Close {
+  transition: transform 0.5s ease-out;
+  transform: rotate(-45deg) translate(5px, -5px);
 }
