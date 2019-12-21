@@ -6,6 +6,7 @@
 }
 
 body {
+  margin-top: 70px;
   background-color: #F0F0F0;
 }
 
@@ -13,9 +14,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 70px;
   background-color: #942525;
   font-family: 'Roboto', sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .navHeading {
@@ -81,7 +85,6 @@ nav {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-    width: 100%;
   }
 
   .navLinks {
@@ -121,4 +124,9 @@ nav {
 .navLine3Close {
   transition: transform 0.5s ease-out;
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mainContainer {
+  display: flex;
+  flex-flow: column;
 }
