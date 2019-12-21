@@ -127,13 +127,62 @@ nav {
   display: flex;
   flex-flow: column;
   width: 100%;
+}
 
+.mainItem {
   padding: 5px 5px 5px 5px;
+  height: 50vh;
 }
 
-img {
+#mainHome {
+  background-image: url("/img/Self_A1.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 92.5vh;
 }
 
-#mainTest {
-  display: flex;
+#mainHomeLeftArr {
+  font-size: 100px;
+  float: left;
+  position: relative;
+  top: 45%;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.mainHomeLeftArr_OFF {
+  visibility: hidden;
+}
+
+#mainHomeLeftArr:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#mainHomeRightArr {
+  font-size: 100px;
+  float: right;
+  position: relative;
+  top: 45%;
+  opacity: 0.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mainHomeRightArr_OFF {
+  visibility: hidden;
+}
+
+#mainHomeRightArr:hover {
+  opacity: 1;
+}
+
+#mainAbout {
+}
+
+#mainExperience {
+}
+
+#mainProjects {
 }
