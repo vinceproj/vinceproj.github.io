@@ -62,6 +62,12 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    #aboutMe h1 {
+        font-size: 3em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 

@@ -156,6 +156,7 @@ footer {
 /*Special Screen Settings*/
 .navMobile {
   display: none;
+  padding-right: 2rem;
 }
 
 .navMobile div {
