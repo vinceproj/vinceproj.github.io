@@ -1,0 +1,267 @@
+/*Catch all elements*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #F3F0EB;
+}
+
+/*pageContainer Settings */
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+/*navBar Settings*/
+nav {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: #469fa0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navHeading {
+  color: #f0f0f0;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  cursor: default;
+  user-select: none;
+  width: 50%;
+  padding-left: 10rem;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.navLinks li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.navLinks a {
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.navLinks a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.15em;
+  background: #f0f0f0;
+  transition: width 0.3s;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+
+/*Footer Settings*/
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #469fa0;
+  width: 100%;
+  bottom: 0px;
+  height: 5rem;
+}
+
+.footerHeading {
+  color: #f0f0f0;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  cursor: default;
+  user-select: none;
+  width: 60%;
+  padding-left: 10rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.footerLinks li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.footerLinks a {
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.footerLinks a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.1em;
+  background: #f0f0f0;
+  transition: width 0.3s;
+}
+
+.footerLinks a:hover::after {
+  width: 100%;
+}
+
+/*Main Settings*/
+.mainContainer {
+  display: flex;
+  flex-flow: row;
+  padding-top: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.mainContainer.fade-in {
+  opacity: 0;
+  transition: none;
+}
+
+.mainItem {
+  flex: 1;
+}
+
+
+#brandingImage {
+  flex: 1;
+  background-image: url(/img/Branding_500x500.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Special Screen Settings*/
+.navMobile {
+  display: none;
+}
+
+.navMobile div {
+  width: 2em;
+  height: .15em;
+  margin: .3em;
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1240px) {
+  .navLinks {
+    width: 50%;
+  }
+
+  .navHeading {
+    padding-left: 5rem;
+  }
+
+  .footerHeading {
+    padding-left: 5rem;
+  }
+
+  #brandingImage {
+    flex: 1;
+    background-image: url(/img/Branding_300x300.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navHeading {
+    padding-left: 4rem;
+    width: 60%;
+    margin-right: 8rem;
+  }
+
+  .navLinks {
+    position: absolute;
+    right: 0px;
+    height: 40vh;
+    top: 5rem;
+    background-color: #469fa0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 12rem;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    border-radius: 0rem 0rem 0rem 1rem;
+  }
+
+  .navMobile {
+    display: block;
+    cursor: pointer;
+  }
+
+  .footerLinks {
+    display: flex;
+    padding-left: 2rem;
+    width: 100%;
+  }
+
+  .footerHeading {
+    display: none;
+  }
+
+  .footerLinks li {
+    padding-top: 1em;
+    list-style: none;
+    margin-right: 2em;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+  }
+
+
+  #brandingImage {
+    flex: 2;
+    background-image: url(/img/Branding_200x200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+
+
+/*End of Mobile Settings*/
+
+.navMobileActive {
+  transform: translateX(0%);
+}
+
+.navLine1Close {
+  transition: transform 0.5s ease-in;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navLine2Close {
+  opacity: 0;
+}
+
+.navLine3Close {
+  transition: transform 0.5s ease-out;
+  transform: rotate(-45deg) translate(5px, -5px);
+}

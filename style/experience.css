@@ -1,0 +1,79 @@
+.mainContainer {
+    flex-flow: column;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.mainItem {
+    align-self: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-left: 35rem;
+    padding-right: 35rem;
+}
+
+.mainItem h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #E1DED7;
+    border-radius: 2rem 2rem;
+    font-size: 2.5em;
+    font-weight: 550;
+}
+
+.mainItem p {
+    padding-top: 0.5rem;
+    font-size: 1.5em;
+    background-color: #E8E5DF;
+    padding-bottom: 0.5rem;
+
+}
+
+.experienceItem {
+    background-color: #E1DED7;
+    border: 2px solid none;
+    border-radius: 2rem 2rem 0rem 0rem;
+
+}
+
+.experienceGrid {
+    background-color: #E8E5DF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+
+}
+
+.experienceClosing {
+    height: 5rem;
+    background-color: #E1DED7;
+    width: 100%;
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+
+.gridItem {
+    font-size: 1.5em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.gridTitle {
+    font-size: 1.2em;
+    font-weight: 525;
+
+}
+
+.gridItem ul {
+    padding-top: 1rem;
+}
+
+.gridItem li {
+    list-style-type: none;
+    font-size: 0.9em;
+    margin-bottom: 0.3rem;
+}

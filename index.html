@@ -7,207 +7,52 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/navStyle.css" />
+  <link rel="stylesheet" href="/style/index.css" />
 
-  <title>Welcome</title>
+  <title>Welcome!</title>
 </head>
 
 <body>
-  <nav>
-    <div class="navHeading">Hi, I'm Vince!</div>
-    <ul class="navLinks">
-      <li><a href="#mainHome">Home</a></li>
-      <li><a href="#mainAbout">About</a></li>
-      <li><a href="#mainExperience">Experience</a></li>
-      <li><a href="#mainProjects">Projects</a></li>
-      <li><a href="#mainContact">Contact</a></li>
-    </ul>
+  <div id="pageContainer">
+    <nav>
+      <div class="navHeading">Hi, I'm Vince!</div>
+      <ul class="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/pages/AboutMe.html">About</a></li>
+        <li><a href="/pages/Experience.html">Experience</a></li>
+        <li><a href="/pages/Projects.html">Projects</a></li>
+      </ul>
 
-    <div class="navMobile">
-      <div class="navLine1"></div>
-      <div class="navLine2"></div>
-      <div class="navLine3"></div>
-    </div>
-  </nav>
-
-  <div class="mainContainer">
-    <div class="mainItem" id="mainHome">
-      <span id="mainHomeLeftArr">&#10096;</span>
-      <span id="mainHomeRightArr">&#10097;</span>
-    </div>
-    <div class="mainItem" id="mainAbout">
-      <h4>About</h4>
-      <div class="mainItemP">
-        <p>
-          In 2013, I committed Asian American treason and withdrew from the
-          University of California, Irvine to instead attend California State
-          University, Fullerton. Transferring universities this way had been
-          considered a backwards step by many. This move meant I would be
-          leaving behind a prestigious university, temporarily switching from
-          devoted scholar to dropout, and wasting away years of my previous
-          efforts. Fortunately, this move actually meant giving myself the
-          opportunity to finally explore what I wanted for myself and how I
-          wanted to get there.
-        </p>
-        <p>
-          In the coming years, I managed to work myself towards financial
-          independence, independent living, and into a Computer Science
-          program. I had the opportunities to work as a store manager, data
-          processing operator, IT intern, and a "role model" (instructor) all
-          while progressing through courses. These experiences gave me unique
-          opportunities to grow my skill set as well as myself as a person. In
-          Fall of 2019, I finished my final courses and am looking forward to
-          continuing my trend of pursuing opportunity to have a life I can be
-          excited for.
-        </p>
-        <p>
-          Regardless of what the future may bring, I plan on bringing myself
-          up to the challenge as best I can. I will continue to learn and grow
-          both as a working professional and as a person. Thank you for taking
-          the time to read my About Me and I wish you all the best. Cheers!
-        </p>
+      <div class="navMobile">
+        <div class="navLine1"></div>
+        <div class="navLine2"></div>
+        <div class="navLine3"></div>
       </div>
-    </div>
-    <div class="mainItem" id="mainExperience">
-      <h4>Experience</h4>
-      <div class="mainTabContainer">
-        <div class="mainTabs">
-          <button class="tabLink" onclick="openExp(event, 'tabRestaurant')">
-            Restaurant Manager
-          </button>
-          <button class="tabLink" onclick="openExp(event, 'tabDPO')">
-            Data Processing Operator
-          </button>
-          <button class="tabLink" onclick="openExp(event, 'tabIT')">
-            IT Intern
-          </button>
-          <button class="tabLink" onclick="openExp(event, 'tabRoleModel')">
-            Role Model
-          </button>
-        </div>
-        <div id="tabRestaurant" class="tabContent">
-          May 2016 - May 2017 <br><br>
-          A management position at a small food business located in Brea, CA.
-          I worked alongside the business owner to help develop the business
-          in terms of forward direction and quality of product. At various
-          times, I assumed full control of operations in the absence of the
-          owner.<br /><br />
-          Working here allowed me to have a hands on experience with operating
-          a business. I thoroughly enjoyed the demanding environment and the
-          leadership role handed to me. The hours I spent working with the
-          owner and staff to keep the business functioning are a memory I hold
-          dearly.
-        </div>
-        <div id="tabDPO" class="tabContent">
-          January 2018 - June 2018 <br><br>
-          A full time job spent at a medical document auditing office in
-          Anaheim. My time here gave me the opportunity to work with various
-          medical agencies and their chosen web environments to help process
-          medical documents. I also worked alongside upper management to help
-          develop a Quality Assurance team to review the work of our Data
-          Processing department.<br /><br />
+    </nav>
 
-          The responsibilities given to me during my time here allowed me to
-          develop various aspects of my communication skills while working
-          with both my peers and agency representatives. It was a gratifying
-          experience in a unique field.
-        </div>
-        <div id="tabIT" class="tabContent">
-          June 2018 - August 2018 <br> <br>
-          A summer internship working alongside the Service Desk at Belkin's
-          corporate headquarters in Playa Vista. The experience gave me an
-          opportunity to work with both front-end and back-end technology,
-          especially in terms of how deployment would be handled and its
-          possible effects on our users.<br /><br />
-
-          Luckily enough, my time here matched the Belkin-FIT merger. This
-          gave me the opportunity to observe the company in a very dynamic
-          moment, and as part of the IT team I managed to learn quite a bit as
-          I worked alongside our users. This opportunity helped me develop a
-          greater understanding and appreciation for the functions and culture
-          of a global business.
-        </div>
-        <div id="tabRoleModel" class="tabContent">
-          October 2018 - February 2019 <br> <br>
-          A part time job working at various elementary schools in the SoCal
-          area. My primary role consists of leading class instruction using
-          coding curriculum. This experience has given me the opportunity to
-          develop my presentation skills, explore communication styles, and
-          personal development by venturing into an unexpected opportunity.
-        </div>
+    <div class="mainContainer fade-in">
+      <div class="mainItem" id="welcomeMessage">
+        Software Engineer
       </div>
+      <div class="mainItem" id="brandingImage"></div>
     </div>
-
-
-    <div class="mainItem" id="mainProjects">
-      <h4>Projects</h4>
-      <div class="mainTabContainer">
-        <div class="mainTabs">
-          <button class="tabLink" onclick="openExp(event, 'tabColorSpot')">
-            ColorSpot
-          </button>
-          <button class="tabLink" onclick="openExp(event, 'tabGameOfLife')">
-            Game of Life
-          </button>
-          <button class ="tabLink" onclick="openExp(event,'tabTomatoTimer')">Tomato Timer</button>
-          <button class="tabLink" onclick="openExp(event, 'tabSQLiteMobile')">
-            Basic SQLite Mobile Handling
-          </button>
-
-        </div>
-        <div id="tabColorSpot" class="tabContent">
-          ColorSpot is a small Unity game developed during a semester long course. I served as project manager, design
-          lead, and head artist for this project.
-          This workload allowed me to explore my creative freedoms with the game, but it did leave me unable to assist
-          with actual Unity code development.
-          A majority of my time went towards managing team progress, developing wireframes, creating the basis of the
-          game, and creating all of the art assets.<br><br>
-          The experience allowed me to apply knowledge I gained from powering through a multitude of online learning
-          courses. I am very thankful to have had such an amazing
-          team to work with during the entirety of the semester. <br><br>
-          The game may be found here: <a href="https://github.com/kasim95/Unity_ColorSpot"
-            target="_blank">Unity_ColorSpot</a>
-
-        </div>
-        <div id="tabGameOfLife" class="tabContent">
-          This project is a Turing Machine version of the Game of Life. It is designed to take single step movements to
-          create progression through the Game of Life. The code offers the ability to view the Turing Machine do every
-          step-by-step calculation or to have each Game of Life turn to be displayed instead. This project heavily
-          relied on translating basic computations into a workable game. <br><br>
-          Creating this project was an interesting experience in terms of having to design game code to match the
-          limitations of a Turing Machine. I will never forget my professor's adamant admissions of a Turing Machine
-          being as powerful as any other computer possible. <br><br>
-          The Turing Machine may be found here: <a href="https://github.com/vinceproj/Game-of-Life"
-            target="_blank">Game-of-Life</a>
-        </div>
-        <div id="tabTomatoTimer" class="tabContent">
-          A Tomato Timer I developed myself. It follows the Pomodoro Technique and implements the timer as so. It features a fun, simple UI that I developed
-          in my spare time. 
-            <br><br>
-          This project utilizes Electron JS to run the app natively on your machine. It is also packaged with a usable .exe for ease of use. 
-          Creating the timer relied on joining JS OOP with functional programming.    <br><br>
-          The Tomato Timer may be found here: <a href="https://github.com/vinceproj/Tomato-Timer/"
-            target="_blank">Tomato-Timer</a>
-        </div>
-        <div id="tabSQLiteMobile" class="tabContent">
-          This android app is a simple design I used to review for an upcoming test. It handles simple SQLite table
-          executions and displays them onto the screen.<br><br>
-          It may be found here: <a href="https://github.com/vinceproj/Basic-SQLite-Mobile"
-            target="_blank">Basic-SQLite-Mobile</a>
-        </div>
-      </div>
-    </div>
-
-    <footer id="mainContact">
+    <footer>
       <div class="footerHeading">Contact Me!</div>
       <ul class="footerLinks">
-        <li><a>vincentcnt95@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/vincent-tran-340363162/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/vinceproj" target="_blank">GitHub</a></li>
+        <li><a href="#">vincentcnt95@gmail.com</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/vincent-tran-340363162/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/vinceproj" target="_blank">GitHub</a>
+        </li>
       </ul>
     </footer>
-    <script src="/script/script.js"></script>
+  </div>
+  <script src="/script/navScript.js"></script>
+  <script src="/script/indexScript.js"></script>
 </body>
 
 </html>
