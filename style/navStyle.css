@@ -3,12 +3,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: 400;
 }
 
 body {
-  background-color: #F3F0EB;
+  background-color: #f3f0eb;
 }
 
 /*pageContainer Settings */
@@ -68,7 +68,6 @@ nav {
 .navLinks a:hover::after {
   width: 100%;
 }
-
 
 /*Footer Settings*/
 footer {
@@ -144,7 +143,6 @@ footer {
   flex: 1;
 }
 
-
 #brandingImage {
   flex: 1;
   background-image: url(/img/Branding_500x500.png);
@@ -161,8 +159,8 @@ footer {
 
 .navMobile div {
   width: 2em;
-  height: .15em;
-  margin: .3em;
+  height: 0.15em;
+  margin: 0.3em;
   background-color: #f0f0f0;
 }
 
@@ -212,6 +210,10 @@ footer {
     border-radius: 0rem 0rem 0rem 1rem;
   }
 
+  .navLinks li {
+    padding-right: 1rem;
+  }
+
   .navMobile {
     display: block;
     cursor: pointer;
@@ -237,16 +239,13 @@ footer {
     font-size: 0.8em;
   }
 
-
   #brandingImage {
     flex: 2;
     background-image: url(/img/Branding_200x200.png);
     background-repeat: no-repeat;
     background-position: center;
   }
-
 }
-
 
 /*End of Mobile Settings*/
 
