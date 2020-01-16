@@ -26,6 +26,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
 }
 
 .navHeading {
@@ -78,6 +79,7 @@ footer {
   width: 100%;
   bottom: 0px;
   height: 5rem;
+  z-index: 1;
 }
 
 .footerHeading {

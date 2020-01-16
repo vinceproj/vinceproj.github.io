@@ -2,6 +2,7 @@
   flex-flow: column;
   padding-top: 8rem;
   padding-bottom: 5rem;
+
 }
 
 .mainItem {
@@ -9,12 +10,12 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
-  min-width: 40rem;
+  width: 40rem;
 }
 
 .mainItem h1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background-color: #e1ded7;
   border-radius: 2rem 2rem;
   font-size: 2.5em;
@@ -34,6 +35,7 @@
   border-radius: 2rem 2rem 0rem 0rem;
 }
 
+
 .experienceGrid {
   background-color: #e8e5df;
   padding-top: 1rem;
@@ -44,7 +46,7 @@
 }
 
 .experienceClosing {
-  height: 5rem;
+  height: 2rem;
   background-color: #e1ded7;
   width: 100%;
   border-radius: 0rem 0rem 2rem 2rem;
@@ -69,17 +71,44 @@
   list-style-type: none;
   font-size: 0.9em;
   margin-bottom: 0.3rem;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.workGrid {
+  background-color: #e8e5df;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.workGrid li {
+  z-index: 0;
+  position: relative;
+  font-size: 0.8em;
+  list-style-type: disc;
+  left: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.workGrid li span {
+  position: relative;
+  left: -2em;
 }
 
 @media screen and (max-width: 1240px) {
   .mainItem {
-    min-width: 35rem;
+    width: 35rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .mainItem {
-    min-width: 25rem;
+    width: 25rem;
   }
 
   .mainItem h1 {
