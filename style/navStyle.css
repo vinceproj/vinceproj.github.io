@@ -38,7 +38,6 @@ nav {
   padding-top: 2rem;
 }
 
-
 .navLinks {
   display: flex;
   justify-content: space-around;
@@ -85,6 +84,8 @@ footer {
   bottom: 0;
   height: 5rem;
   z-index: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footerHeading {
@@ -197,7 +198,6 @@ footer {
   body {
     overflow-x: hidden;
   }
-
 
   .navHeading {
     padding-left: 2rem;
