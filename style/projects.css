@@ -1,0 +1,117 @@
+.mainContainer {
+    flex-flow: column;
+    padding-top: 8rem;
+}
+
+.mainItem {
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-flow: row;
+}
+
+.mainItem p {
+    margin-top: 1rem;
+    text-indent: 2em;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.projectContent {
+    padding: 8rem 1rem 1rem 1rem;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.projectLink {
+    font-size: 1.25em;
+}
+
+.projectLink a {
+    border: 0.075em solid #469fa0;
+    color: #469fa0;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.divider {
+    height: 0.1rem;
+    margin-left: 10%;
+    width: 80%;
+    content: "";
+    border-radius: 100%;
+    border: 0.1rem solid black;
+
+}
+
+.projectImage {
+    min-width: 500px;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#tomatoTimerImage {
+    background-image: url("../img/TomatoTimer_300x314.png");
+}
+
+#colorSpotImage {
+    background-image: url("../img/Spot_300x279.png");
+}
+
+#gameOfLifeImage {
+    background-image: url("../img/Game\ of\ Life_300x281.png");
+}
+
+
+@media screen and (max-width: 1240px) {
+    .mainItem {
+        width: 100%;
+    }
+
+    .mainItem p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainItem {
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+
+    .projectContent {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .projectImage {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    #tomatoTimerImage {
+        background-image: url("../img/TomatoTimer_200x209.png");
+    }
+
+    #colorSpotImage {
+        background-image: url("../img/Spot_200x186.png");
+    }
+
+    #gameOfLifeImage {
+        background-image: url("../img/Game\ of\ Life_200x187.png");
+    }
+
+}

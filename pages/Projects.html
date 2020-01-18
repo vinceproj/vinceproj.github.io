@@ -9,14 +9,14 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Heebo:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/navStyle.css" />
-    <link rel="stylesheet" href="../style/aboutMe.css" />
+    <link rel="stylesheet" href="../style/projects.css">
     <title>About Me!</title>
 </head>
 
 <body>
     <div id="pageContainer">
         <nav>
-            <div class="navHeading">Projects</div>
+            <div class="navHeading"><img src="/img/Branding_80x80.png" alt="branding" srcset=""></div>
             <ul class="navLinks">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="AboutMe.html">About</a></li>
@@ -32,12 +32,62 @@
         </nav>
 
         <div class="mainContainer fade-in">
-            <div class="mainItem" id="brandingImage"></div>
-            <div class="mainItem" id="aboutMe">
-                <h1>Under Construction!</h1>
-            </div>
+            <div class="mainItem" id="tomatoTimer">
+                <div class="projectContent">
+                    <span class="projectTitle">Tomato Timer</span>
+                    <p>A tomato timer that I developed to practice using Electron JS. The development focused on using
+                        Electron to create a single page application that ran natively on the machine. It is a single
+                        page
+                        app that was built using general web development tools and practices. The project features a
+                        fun,
+                        simple UI that I put together.</p>
+                    <br>
+                    <span class="projectLink"><a href="https://github.com/vinceproj/Tomato-Timer/"
+                            target="_blank">Github: Tomato-Timer</a></span>
+                </div>
 
+                <div class="projectImage" id="tomatoTimerImage"></div>
+
+            </div>
+            <div class="divider"></div>
+            <br>
+            <div class="mainItem" id="colorSpot">
+                <div class="projectContent">
+                    <span class="projectTitle">ColorSpot</span>
+                    <p>ColorSpot is a small Unity game developed during a semester long course. For this project, I
+                        served as project manager, lead designer, and head artist. Although I did not participate in the
+                        code, I devoted my time guiding along the team while providing necessary assets and assistance.
+                    </p>
+                    <br>
+                    <span class="projectLink"><a href="https://github.com/kasim95/Unity_ColorSpot"
+                            target="_blank">Github: ColorSpot</a></span>
+                </div>
+                <div class="projectImage" id="colorSpotImage"></div>
+
+
+            </div>
+            <div class="divider"></div>
+            <br>
+            <div class="mainItem" id="gameOfLife">
+                <div class="projectContent">
+                    <span class="projectTitle">Game of Life</span>
+                    <p>A simulated Turing Machine I developed for a course. The development focused on simulating the
+                        simplicity of a Turing Machine while creating a working iteration of the Game of Life.</p>
+                    <br>
+                    <span class="projectLink"><a href="https://github.com/vinceproj/Game-of-Life"
+                            target="_blank">Github: Game
+                            of Life</a></span>
+                </div>
+
+                <div class="projectImage" id="gameOfLifeImage"></div>
+
+            </div>
+            <div class="divider"></div>
+            <br>
         </div>
+
+
+
         <footer>
             <div class="footerHeading">Contact Me!</div>
             <ul class="footerLinks">
@@ -50,6 +100,7 @@
                 </li>
             </ul>
         </footer>
+    </div>
     </div>
     <script src="../script/navScript.js"></script>
 </body>

@@ -1,12 +1,27 @@
 #welcomeMessage {
-    padding-top: 20rem;
-    padding-left: 20rem;
-    padding-bottom: 1rem;
     align-self: center;
     flex: 1;
-    font-size: 6em;
+    font-size: 1.3em;
     cursor: default;
     user-select: none;
+    font-weight: 600;
+    color: #F86C59;
+
+}
+
+.mainContainer {
+    display: column;
+    align-items: center;
+
+}
+
+#intro {
+    flex: 1;
+    font-size: 6em;
+    vertical-align: middle;
+    padding-left: 10rem;
+    padding-top: 20rem;
+    font-weight: 100;
 }
 
 .welcomeShow {
@@ -20,13 +35,13 @@
 }
 
 @media screen and (max-width: 1240px) {
-
-    #welcomeMessage {
-        padding-top: 20rem;
-        padding-left: 10rem;
-        align-self: center;
+    #intro {
         flex: 1;
-        font-size: 4em;
+        font-size: 5em;
+        vertical-align: middle;
+        padding-left: 5rem;
+        padding-top: 20rem;
+        font-weight: 100;
     }
 
     #brandingImage {
@@ -35,16 +50,22 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    #welcomeMessage {
+        font-size: 1em;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    #welcomeMessage {
-        padding-top: 10rem;
-        padding-left: 3rem;
-        align-self: center;
+    #intro {
         flex: 1;
-        font-size: 2em;
+        font-size: 2.5em;
+        vertical-align: middle;
+        padding-left: 1rem;
+        padding-top: 20rem;
+        font-weight: 100;
     }
 
     #brandingImage {
