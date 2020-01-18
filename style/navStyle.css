@@ -234,8 +234,9 @@ footer {
   .footerLinks {
     display: flex;
     padding-left: 5rem;
+    padding-right: 5rem;
     align-self: center;
-    width: 80%;
+    width: 100%;
   }
 
   .footerHeading {
@@ -245,7 +246,6 @@ footer {
   .footerLinks li {
     padding-top: 1em;
     list-style: none;
-    margin-right: 2em;
     margin-bottom: 0.5em;
     font-size: 0.8em;
   }
